@@ -1,0 +1,766 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #023e8a; /* professional navy blue */
+}
+
+header .highlight {
+    color: #0077b6; /* bright accent blue */
+}
+
+header p {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.about-section {
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap; /* makes it responsive */
+}
+
+img.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #0077b6; /* professional blue border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+img.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0077b6;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* makes text aligned on both sides */
+}
+
+.row {
+    display: flex
+;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tab-titles {
+    display: flex
+;
+    margin: 20px 0 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+/* Tabs Section */
+.tabs-section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Tab Titles */
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.tab-link {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tab-link:hover,
+.tab-link.active-link {
+    color: #fff;
+    background: #0077b6; /* professional blue */
+}
+
+/* Content Cards */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* Lists */
+.skills-list li,
+.experience-list li,
+.education-list li {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    list-style: none;
+}
+
+.skills-list li:hover,
+.experience-list li:hover,
+.education-list li:hover {
+    transform: translateY(-5px);
+}
+
+/* Icons inside list */
+.skills-list li i,
+.experience-list li i,
+.education-list li i {
+    color: #0077b6;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #0077b6; /* Professional blue */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.download-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.download-btn:hover {
+    background: #023e8a; /* darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media only screen and (max-width: 400px) {
+    .column1 {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .column1, .column2 {
+        flex-basis: 100%;
+    }
+}
+.column1 {
+    flex-basis: 35%;
+}
+
+hr
+{
+    width: 50%;
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+h1, h2
+{
+    font-weight: 700;
+}
+
+p, a
+{
+    font-weight: 400;
+}
+
+a
+{
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a:hover 
+{
+    color: #0056b3;
+}
+
+.fas, .fab
+{
+    margin: right 1px;;
+    color: inherit;
+}
+
+/*Icon link to display as large circles*/
+.icon-link
+{
+    display: inline-flex; /* Display icons links inline with block formation*/
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Add space on the left and right of each icon*/
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.email-icon
+{
+    background: #dd4b39;
+}
+
+.linkedin-icon /*62 line in webinar*/
+{
+    background: #0a76a8;
+}
+
+.github-icon i {
+    color: #000; /* Pure black */
+    font-size: 40px; /* make it a bit larger if you want */
+    transition: color 0.3s;
+}
+
+.github-icon i:hover {
+    color: #333; /* slightly lighter on hover */
+}
+
+.icon-link:hover
+{
+    transform: scale(1.1); /* Increase size of icon on hover */
+    color: #fff;
+}
+
+header, footer
+{
+    background: linear-gradient(to right, #e292e1);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: #fff;
+}
+
+.hero-header h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.hero-header .emoji {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.hero-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.hero-header .name {
+    color: #ffe066; /* highlight your name */
+}
+
+.hero-header .role {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #f1f1f1;
+}
+
+
+section
+{
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.skills-list
+{
+    display: flex;
+    justify-content: row;
+    list-style-type: center;
+    gap: 30px;
+}
+
+.skills-list li 
+{
+    list-style-type: none;
+    background: #f0f2f5;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: bounce 1s infinite alternate; /* Apply bounce animation*/ 
+}
+
+.experience-list
+{
+    text-align: left;
+    padding: 0 20px;
+}
+
+.experience-list li
+{
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.education-list
+{
+    text-align: left;
+    padding: 0 20px;
+}
+
+.education-list li
+{
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; /* makes it responsive */
+    gap: 30px; /* space between cards */
+    margin-top: 30px;
+}
+
+.project-thumbnail {
+    flex: 1 1 300px; /* each card will take equal width, min 300px */
+    min-width: 280px;
+    max-width: 320px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px; 
+}
+
+.project-thumbnail:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; /* optional: to soften image corners */
+    margin-bottom: 15px;
+}
+
+.thumbnail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* makes all cards equal height */
+    padding: 20px 30px;
+    background: #fff;
+    text-align: justify;
+}
+
+.thumbnail-content h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.thumbnail-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify; /* makes description aligned neatly */
+    line-height: 1.6;   /* improves readability */
+    flex-grow: 1; 
+}
+
+.thumbnail-content .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #0077b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.thumbnail-content .btn:hover {
+    background: #023e8a;
+}
+
+form
+{
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #fff;
+    box-sizing: border-box;
+    text-align: 10px; /* Align form elements to the left */
+}
+
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group label
+{
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"], form input[type="email"], form textarea, form button
+{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0; /* Ensures vertical spacing */
+}
+
+form button
+{
+    background-image: linear-gradient(to right, #831bcd,#f9620b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover
+{
+    background-image: linear-gradient(to right, #f9620b, #831bcd);
+}
+
+/*Representing Design adjustments for smaller devices*/
+@media only screen and (max-width: 768px)
+{
+    .skills-list
+    {
+        flex-direction: column; /* Stacks skills vertically on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    header, footer
+    {
+        padding: 15px; /* Adjusts padding for smaller screens */
+    }
+
+    section, form 
+    {
+        width: calc(100% - 20px); /* Adjust width to ensure spacing on very small screens */
+        margin: 10px auto;
+    }
+
+    .icon-link 
+    {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px; /* Adjusts icon size and spacing for smaller screens */
+    }
+
+    h1, h2 
+    {
+        font-size: 16px; /* Adjusts heading sizes for better readability on small devices*/
+    }
+}
+
+@keyframes bounce 
+{
+    form 
+    {
+        transform: translateY(0);
+    }
+    to 
+    {
+        transform: translateY(-10px);
+    }
+}
+
+.horizontal-scroll
+{
+    overflow-x: hidden; /* Hide any overflowing content*/
+    width: 100%; /* Occupy full width of the screen */
+}
+
+.icon-container 
+{
+    display: flex; /* Display icons in a row */
+    animation: scrollAnimation 10s linear infinite; /* Adjust animation duration as needed */
+    width: max-content; /* make the container width fit its content*/
+}
+
+.icon-container img 
+{
+    width: 60px; /* Adjust the width of icons as needed */
+    height: 60px; /* Adjust the height of icons as needed */
+    margin-right: 20px; /* Adjust margin between icons as needed */
+}
+
+@keyframes scrollAnimation 
+{
+    0% 
+    {
+        transform: translateX(100vw); /* Start from the right edge of the viewport */
+    }
+    100% 
+    {
+        transform: translateX(-100%); /* Move to the left edge */
+    }
+} 
+
+/*CSS for Drak Mode*/
+.dark-mode
+{
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button
+{
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode p
+{
+    color: #fff;
+}
+
+#programming-languages
+{
+    margin-top: 50px;
+}
+
+#programming-languages .skill
+{
+    margin-bottom: 20px;
+}
+
+#programming-languages .progress-bar
+{
+    width: 0;
+    height: 20px;
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    border-radius: 10px;
+}
+
+#programming-languages .progress
+{
+    height: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#programming-languages .progress-bar.animated
+{
+    animation: animateProgress 1s ease forwards;
+}
+
+@keyframes animateProgress
+{
+    to
+    {
+        width: var(--progress);
+    }
+}
+
+#projects
+{
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.project-thumbnail
+{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-content
+{
+    padding: 0px 0px 20px 0px;
+}
+
+.thumbnail-content img
+{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.thumbnail-content h3
+{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.thumbnail-content p
+{
+    margin-top: 10px;
+}
+
+.thumbnail-content .btn
+{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #831bcd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.thumbnail-content .btn:hover
+{
+    background-color: #f9620b;
+}
+
+
+
+
+
+
+
+
+.nav.toggle
+{
+    display: none;
+}
+
+.navbar
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.navbar.container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.navbar.container .logo
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar.container .menu
+{
+    display: none;
+}
+
+.navbar.container .links
+{
+    display: flex;
+}
+
+.dark.mode
+{
+    background-color: #333;
+    color: #fff;
+}
+
+preview
+{
+    display: none;
+}

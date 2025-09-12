@@ -1,0 +1,297 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal profile page of Vaishnavi">
+    <title>Vaishnavi's Profile</title>
+    <link rel="icon" href="./images/assets/img/th.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>Hi, I'm <span class="highlight">Vaishnavi</span></h1>
+            <p>Aspiring <b>Data Analyst</b> & <b>Full Stack Developer</b> | CSE Student</p>
+        </header>
+
+        <section class="about-section">
+            <div class="about-container">
+                <!-- Left side: Image -->
+                <div class="about-img">
+                    <img src="./images/assets/img/VT.jpg" alt="Vaishnavi Todkar" width="300">
+                </div>
+
+                <!-- Right side: Info -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a Computer Science and Engineering student with hands-on experience in <b>Data Analytics</b> and 
+                        <b>Full Stack Development</b>. I specialize in working with <b>SQL, Python, Excel, Power BI, and data 
+                        visualization</b> to uncover insights, while also building scalable web applications using 
+                        <b>HTML, CSS, JavaScript, and React.js</b>.  
+                        My academic journey and project experience have equipped me to bridge the gap between data-driven 
+                        decision-making and practical software solutions, and I am eager to apply my skills to real-world challenges.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="tabs-section">
+            <div class="tab-titles">
+                <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                <p class="tab-link" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- Skills -->
+            <div class="tab-content active-tab" id="skills">
+                <ul class="skills-list">
+                    <li>
+                        <i class="fa-solid fa-code"></i>
+                        <span><b>Frontend Developer</b></span>
+                        <p>HTML, CSS, JavaScript, React.js</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-database"></i>
+                        <span><b>Backend Developer</b></span>
+                        <p>Python, MongoDB, MySQL</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span><b>Data Analytics</b></span>
+                        <p>SQL, Python, Excel, Power BI, Tableau, Data Visualization</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content" id="experience">
+                <ul class="experience-list">
+                    <li>
+                        <h4><i class="fa-solid fa-laptop-code"></i> Full Stack Developer Intern</h4>
+                        <p>Built responsive web apps using HTML, CSS, JavaScript. Developed backend services with Python and managed databases with MySQL. Contributed to debugging, testing, and documentation.</p>
+                    </li>
+                    <li>
+                        <h4><i class="fa-solid fa-chart-pie"></i> Data Analyst Intern</h4>
+                        <p>Analyzed datasets using SQL & Python, built Power BI dashboards, and collaborated with teams to deliver data-driven insights.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Education -->
+            <div class="tab-content" id="education">
+                <ul class="education-list">
+                    <li>
+                        <i class="fa-solid fa-school"></i>
+                        <span>Higher Secondary College</span>
+                        <p>Maharashtra State Board</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>Bachelor Of Technology</span>
+                        <p>Computer Science and Engineering – Shivaji University, Kolhapur</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>My Works</h2>
+            <p>Take a look at some of my works.</p>
+            <section id="projects">
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./images/assets/img/Finance Management.jpg" alt="Project 1">
+                        <h3>Personal Finance Management</h3>
+                        <p>A web-based application designed to help users track income, expenses, and savings. It provides data visualizations, budget planning tools, and financial insights to improve money management and decision-making.</p>
+                        <a href="" class="btn">Know More</a>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./images/assets/img/Bechdel Test.jpg" alt="Project 2">
+                        <h3>The Bechdel Test</h3>
+                        <p>A data analysis project evaluating movies based on the Bechdel Test to measure female representation in films. The project uses datasets to track trends in gender equality and visualizes results through interactive dashboards.</p>
+                        <a href="" class="btn">Know More</a>
+                    </div>
+                </div>
+
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./images/assets/img/Gender Diversity.jpg" alt="Project 3">
+                        <h3>Gender Diversity</h3>
+                        <p>A data-driven project that analyzes gender diversity across different domains, highlighting representation gaps and trends through interactive visualizations and reports.</p>
+                        <a href="" class="btn">Know More</a>
+                    </div>
+                </div>
+
+            <!-- Repeat the above structure for each project -->
+            </section>
+            <!--<p><a href="">Project 1</a> | <a href="">Project 2</a>-->
+        </section>
+        <hr>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section><hr>
+
+        <a href="./images/assets/img/Vaishnavi Todkar CV.docx" download 
+           class="download-btn">
+            <i class="fa-solid fa-download"></i> Download CV
+        </a>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>Let's connect!</p>
+            <a href="mailto:vaishnavitodkar14@gmail.com" class="icon-link email-icon" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vaishnavi-todkar-596b76271" class="icon-link linkedin-icon" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+           <a href="https://github.com/vaishnavi-t14" class="icon-link github-icon" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Vaishnavi, Build my WebPageHub</p>
+        </footer>
+
+        <div id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+        
+        <script lang="Javascript">
+            function changeAboutMeText() 
+            {
+                const aboutMeTexts = ["Frontend Developer", "Backend Developer", "Data Analytics"]; // Add more texts as needed
+                const typingSpeed = 100; //milliseconds per character
+                const deletingSpeed = 50; //milliseconds per character during deleting
+                const pauseTime = 1500; //milliseconds to pause between each text change
+                const aboutMeElement = document.querySelector('.about-me');
+
+                let textIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+
+                function type() 
+                {
+                    const currentText = aboutMeTexts[textIndex];
+                    /* Typing */
+                    if (!isDeleting && charIndex < currentText.length) 
+                    {
+                        aboutMeElement.textContent += currentText.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, typingSpeed);
+                    }
+                    /* Deleting */
+                    else if (isDeleting && charIndex > 0) 
+                    {
+                        aboutMeElement.textContent = currentText.substring(0, charIndex - 1);
+                        charIndex--;
+                        setTimeout(type, deletingSpeed);
+                    }
+
+                    /*Switching between typing and deleting */
+                    else 
+                    {
+                        isDeleting = !isDeleting;
+                        if (!isDeleting) 
+                        {
+                            textIndex = (textIndex + 1) % aboutMeTexts.length;
+                        }
+                        setTimeout(type, pauseTime);
+                    }
+                }
+
+                type();
+            }
+
+            //Javascript code 
+            document.addEventListener('DOMContentLoaded', function () 
+            {
+                const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+                const body = document.body;
+
+                darkModeToggle.addEventListener('click', function ()
+                {
+                    body.classList.toggle('dark-mode');
+                    const currentMode = body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+                    darkModeToggle.querySelector('i').classList.toggle('fa-sun');
+                    darkModeToggle.querySelector('i').classList.toggle('fa-moon');
+                    darkModeToggle.querySelector('i').classList.toggle('light-mode');
+                });
+            });
+
+            // Call the function to add stunning modification
+            changeAboutMeText();
+
+            document.addEventListener('DOMContentLoaded', function ()
+            {
+                const observer = new IntersectionObserver(entries =>
+                {
+                    entries.forEach(entry =>
+                    {
+                        if (entry.isIntersecting) 
+                        {
+                            const progressBar = entry.target.querySelector('.progress-bar');
+                            const progress = progressBar.dataset.progress;
+                            progressBar.style.setProperty('--progress', `${progress}%`);
+                            progressBar.classList.add('animated');
+                            observer.unobserve(entry.target);
+                        } 
+                    });
+                });
+
+                const programmingLanguages = document.querySelectorAll('#programming-languages .skill');
+                programmingLanguages.forEach(skill => 
+                {
+                    observer.observe(skill);
+                }); 
+            });
+
+            function opentab(tabName) {
+                const tabContents = document.querySelectorAll(".tab-content");
+                const tabLinks = document.querySelectorAll(".tab-link");
+
+                tabContents.forEach(tab => tab.classList.remove("active-tab"));
+                tabLinks.forEach(link => link.classList.remove("active-link"));
+
+                document.getElementById(tabName).classList.add("active-tab");
+                event.currentTarget.classList.add("active-link");
+            }
+        </script>
+    </center>
+
+</body>
+</html>
