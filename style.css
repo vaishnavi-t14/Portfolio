@@ -80,15 +80,13 @@ img.profile-pic:hover {
 }
 
 .row {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .tab-titles {
-    display: flex
-;
+    display: flex;
     margin: 20px 0 40px;
 }
 
@@ -458,8 +456,12 @@ section
 }
 
 .thumbnail-content .btn {
-    display: inline-block;
-    padding: 10px 18px;
+    display: flex;
+    text-align: center; 
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    font-weight: 500;
+    padding: 12px 20px;
     background: #0077b6;
     color: #fff;
     text-decoration: none;
@@ -763,4 +765,5 @@ form button:hover
 preview
 {
     display: none;
+
 }
